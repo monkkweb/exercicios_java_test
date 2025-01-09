@@ -1,10 +1,15 @@
 package exercicio8;
 
-public class CaluladoraDeVolume {
-    private static final double VALOR_DE_PI = 3.14159;
+import java.math.BigDecimal;
 
-    public String calcular(double raio, double altura) {
-        double resultado = VALOR_DE_PI * (raio * raio) * altura;
-        return String.format("%.2f", resultado) + " cm³";
+import static java.math.BigDecimal.ROUND_CEILING;
+
+public class CaluladoraDeVolume {
+    private static final BigDecimal VALOR_DE_PI = BigDecimal.valueOf(3.14159);
+
+    public BigDecimal calcular(BigDecimal raio, BigDecimal altura) {
+        var resultado = VALOR_DE_PI.multiply(raio).multiply(raio).multiply(altura);
+        var a = new BigDecimal(String.valueOf(resultado));
+        return a.setScale(2, ROUND_CEILING);
     }
 }

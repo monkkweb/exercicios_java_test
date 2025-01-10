@@ -11,9 +11,10 @@ public class CalculadoraDeVolumeTest {
         BigDecimal volumeEsperado = BigDecimal.valueOf(2148.85);
         BigDecimal raio = BigDecimal.valueOf(6);
         BigDecimal altura = BigDecimal.valueOf(19);
-
         var calculadora = new CaluladoraDeVolume();
 
-        Assertions.assertEquals(volumeEsperado, calculadora.calcular(raio, altura));
+        var rescultado = calculadora.calcular(raio, altura);
+
+        Assertions.assertEquals(volumeEsperado, rescultado);
     }
 }

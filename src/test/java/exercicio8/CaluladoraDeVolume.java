@@ -9,7 +9,6 @@ public class CaluladoraDeVolume {
 
     public BigDecimal calcular(BigDecimal raio, BigDecimal altura) {
         var resultado = VALOR_DE_PI.multiply(raio).multiply(raio).multiply(altura);
-        var a = new BigDecimal(String.valueOf(resultado));
-        return a.setScale(2, ROUND_CEILING);
+        return resultado.setScale(2, ROUND_CEILING);
     }
 }

@@ -11,6 +11,8 @@ public class ComissaoTest {
     void deve_calcular_ah_comissao_do_funcionario(double comissaoEsperada, double valorDaPeca, double quantidadeVendida) {
         var calculadoraDeComissao = new CalculadoraDeComissoes();
 
-        Assertions.assertEquals(comissaoEsperada, calculadoraDeComissao.calcular(valorDaPeca, quantidadeVendida));
+        var resultado = calculadoraDeComissao.calcular(valorDaPeca,quantidadeVendida);
+
+        Assertions.assertEquals(comissaoEsperada, resultado);
     }
 }

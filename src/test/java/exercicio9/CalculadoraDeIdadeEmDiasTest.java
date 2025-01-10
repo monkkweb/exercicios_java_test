@@ -10,6 +10,8 @@ public class CalculadoraDeIdadeEmDiasTest {
     void deve_calcular_ah_idade_de_uma_pessoa_em_dias(int diasEsperados, int anos, int meses, int dias) {
         var calculadora = new CalculadoraDeIdadeEmDias();
 
-        Assertions.assertEquals(diasEsperados, calculadora.calcular(anos, meses, dias));
+        var resultado = calculadora.calcular(anos, meses, dias);
+
+        Assertions.assertEquals(diasEsperados, resultado);
     }
 }

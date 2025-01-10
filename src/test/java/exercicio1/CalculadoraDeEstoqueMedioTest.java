@@ -10,6 +10,8 @@ public class CalculadoraDeEstoqueMedioTest {
     void deve_calcular_oh_estoque_medio_de_um_produto(double mediaEsperada, double quantidadeMaxima, double quantidadeMinima) {
         var calculadoraDeEstoqueMedio = new CalculadoraDeEstoqueMedio();
 
-        Assertions.assertEquals(mediaEsperada, calculadoraDeEstoqueMedio.calcular(quantidadeMaxima, quantidadeMinima));
+        var resultado = calculadoraDeEstoqueMedio.calcular(quantidadeMaxima, quantidadeMinima);
+
+        Assertions.assertEquals(mediaEsperada, resultado);
     }
 }

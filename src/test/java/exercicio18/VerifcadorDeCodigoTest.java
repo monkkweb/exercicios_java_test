@@ -20,9 +20,31 @@ public class VerifcadorDeCodigoTest {
     private Verificador verificador;
 
     @Test
-    void deve_mandar_um_valor_valido_e_retornar_a_mensagem() {
+    void deve_mandar_o_codigo_um_para_testar_se_eh_valido() {
         var mensagemEsperada = "Um";
         Mockito.when(leitor.ler()).thenReturn(1);
+
+        verificador.verificar();
+
+        Mockito.verify(impressora).imprimir(argumentCaptor.capture());
+        Assertions.assertEquals(mensagemEsperada, argumentCaptor.getValue());
+    }
+
+    @Test
+    void deve_mandar_o_codigo_dois_para_testar_se_eh_valido() {
+        var mensagemEsperada = "Dois";
+        Mockito.when(leitor.ler()).thenReturn(2);
+
+        verificador.verificar();
+
+        Mockito.verify(impressora).imprimir(argumentCaptor.capture());
+        Assertions.assertEquals(mensagemEsperada, argumentCaptor.getValue());
+    }
+
+    @Test
+    void deve_mandar_o_codigo_tres_para_testar_se_eh_valido() {
+        var mensagemEsperada = "Tres";
+        Mockito.when(leitor.ler()).thenReturn(3);
 
         verificador.verificar();
 

@@ -25,7 +25,7 @@ public class Exercicio10 {
         if (PrimeiroNumero >= SegundoNumero) MaiorOuIgual = true;
         if (PrimeiroNumero <= SegundoNumero) MenorOuIgual = true;
 
-        System.out.println("\nIgual = " + Igual);
+        System.out.println("Igual = " + Igual);
         System.out.println("Não Igual = " + NaoIgual);
         System.out.println("Maior = " + Maior);
         System.out.println("Menor = " + Menor);

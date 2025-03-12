@@ -1,4 +1,4 @@
-package calculadora;
+package exercici23;
 
 import java.util.Objects;
 import java.util.Scanner;

@@ -2,8 +2,8 @@ package exercicio2;
 
 public class ConversorDeDolarEmReal {
 
-    private final Leitor leitor;
-    private final Impressora impressora;
+    private  Leitor leitor;
+    private Impressora impressora;
 
     public ConversorDeDolarEmReal(Leitor leitor, Impressora impressora) {
         this.leitor = leitor;

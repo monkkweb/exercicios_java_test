@@ -29,4 +29,3 @@ public class ConersorDeDolarEmRealTest {
         Assertions.assertEquals(valorRealEsperado, argumentCaptor.getValue(), 1);
     }
 }
-

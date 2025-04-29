@@ -11,6 +11,7 @@ public class ConversorDeGrausFahrenheitParaGrausCelsiusTest {
         var conversor = new ConversorDeGrausFahrenheitParaGrausCelsius();
 
         var resultado = conversor.converter(grausFahrenheit);
-        Assertions.assertEquals(grausDeCelsiustEsperado, resultado);
+
+       Assertions.assertEquals(grausDeCelsiustEsperado, resultado);
     }
 }

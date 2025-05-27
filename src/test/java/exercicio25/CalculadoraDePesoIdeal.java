@@ -1,6 +1,5 @@
 package exercicio25;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Objects;

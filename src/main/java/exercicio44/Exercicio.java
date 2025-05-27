@@ -29,6 +29,5 @@ public class Exercicio {
             System.out.println("Conversão para graus Fahrenheit: " + conversorFormatado);
         }
 
-
     }
 }
